@@ -11,7 +11,7 @@
         "start-dev": "nodemon --exec \"npm run build && npm run start\""
     },
     "dependencies": {
-        "@gitzup/config": "0.0.8",
+        "@gitzup/config": "0.0.9",
         "@google-cloud/pubsub": "0.19.0",
         "body-parser": "1.18.3",
         "express": "4.16.3",
