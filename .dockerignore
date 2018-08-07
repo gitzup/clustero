@@ -1,0 +1,6 @@
+/dashboard/build
+/dashboard/dist
+/dashboard/node_modules
+/server/build
+/server/dist
+/server/node_modules

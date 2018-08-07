@@ -1,0 +1,12 @@
+{
+    "ext": "ts js json",
+    "ignore": [
+        ".git",
+        "node_modules"
+    ],
+    "stdin": false,
+    "watch": [
+        "src"
+    ],
+    "verbose": true
+}

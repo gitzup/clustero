@@ -1,0 +1,14 @@
+/dashboard/build
+/dashboard/node_modules
+/dashboard/src/**/*.css
+/server/dist
+/server/node_modules
+/.env
+*.pem
+*.pid
+*.pid.lock
+*.seed
+.eslintcache
+.node_repl_history
+.npm
+npm-debug.log*

@@ -1,0 +1,44 @@
+{
+    "name": "@gitzup/clustero-dashboard",
+    "version": "0.0.0",
+    "license": "Apache-2.0",
+    "author": "Arik Kfir <arik@kfirs.com>",
+    "description": "Clustero Dashboard",
+    "repository": "git@github.com:gitzup/clustero.git",
+    "scripts": {
+        "build-css": "node-sass-chokidar src/ -o src/",
+        "watch-css": "npm run build-css; node-sass-chokidar src/ -o src/ --watch --recursive",
+        "start-js": "react-scripts-ts start",
+        "start": "npm-run-all -p watch-css start-js",
+        "build": "npm run build-css && react-scripts-ts build",
+        "serve": "serve",
+        "test": "react-scripts-ts test --env=jsdom",
+        "eject": "react-scripts-ts eject"
+    },
+    "dependencies": {
+        "@gitzup/config": "0.0.8",
+        "@google-cloud/pubsub": "0.19.0",
+        "@octokit/rest": "15.9.5",
+        "moment": "2.22.2",
+        "ms": "2.1.1",
+        "react": "16.4.2",
+        "react-dom": "16.4.2",
+        "react-scripts-ts": "2.16.0",
+        "serve": "9.4.0",
+        "slf4ts-api": "1.1.1",
+        "slf4ts-console": "1.0.2",
+        "uuid": "3.3.2"
+    },
+    "devDependencies": {
+        "@types/jest": "23.3.1",
+        "@types/jsonwebtoken": "7.2.8",
+        "@types/ms": "0.7.30",
+        "@types/node": "10.5.6",
+        "@types/react": "16.4.7",
+        "@types/react-dom": "16.0.6",
+        "node-sass-chokidar": "1.3.3",
+        "npm-run-all": "4.1.3",
+        "typescript": "3.0.1"
+    },
+    "proxy": "http://server:4000"
+}

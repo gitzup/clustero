@@ -1,0 +1,35 @@
+version: '3.7'
+services:
+
+  ngrok:
+    image: wernight/ngrok
+    command:
+    - "ngrok"
+    - "http"
+    - "-authtoken=${NGROK_AUTH_TOKEN}"
+    - "-bind-tls=both"
+    - "-region=eu"
+    - "-subdomain=${NGROK_SUBDOMAIN}"
+    - "dashboard:3000"
+    ports:
+    - "4040:4040"
+
+  dashboard:
+    image: node:10.7.0
+    environment:
+    - "DANGEROUSLY_DISABLE_HOST_CHECK=true"
+    working_dir: /usr/local/app/
+    command: ["npm","run","start"]
+    volumes:
+    - ./dashboard/:/usr/local/app/:rw
+    ports:
+    - "3000:3000"
+
+  server:
+    image: node:10.7.0
+    working_dir: /usr/local/app/
+    command: ["npm","run","start-dev"]
+    volumes:
+    - ./server/:/usr/local/app/:rw
+    ports:
+    - "4000:4000"

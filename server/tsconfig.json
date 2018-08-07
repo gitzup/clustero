@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "diagnostics": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es5",
+            "es6",
+            "es2015",
+            "es7",
+            "es2017"
+        ],
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "pretty": false,
+        "rootDir": "src",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es6"
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}
