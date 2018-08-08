@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./App.css";
 import About from "../app/about/About";
 import Home from "../Home";
 import { Route } from "react-router-dom";
