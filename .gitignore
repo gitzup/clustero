@@ -3,6 +3,7 @@
 /dashboard/src/**/*.css
 /server/dist
 /server/node_modules
+/.work
 /.env
 *.pem
 *.pid
